@@ -22,3 +22,28 @@ var kisiTanim_after_es6 = "".concat(fullName, " ad\u0131ndaki ki\u015Finin mesle
 // BOOLEAN
 var isPresent = true;
 console.log(isPresent);
+console.log("---------------------");
+console.log("---------------------");
+//! Başlangıç Değeri Atama
+var Person = /** @class */ (function () {
+    function Person() {
+        this.name = "Ozan";
+        this.surname = "Yaprak";
+    }
+    return Person;
+}());
+var Student = /** @class */ (function () {
+    function Student(StudentName, isActive, Number) {
+        if (StudentName === void 0) { StudentName = "OzanYaprak"; }
+        if (isActive === void 0) { isActive = false; }
+        if (Number === void 0) { Number = 21; }
+        this.StudentName = StudentName;
+        this.isActive = isActive;
+        this.Number = Number;
+    }
+    return Student;
+}());
+var student = new Student();
+console.log("".concat(student.StudentName, " isimli ve ").concat(student.Number, " numaral\u0131 "));
+var person = new Person();
+console.log("Ki\u015Finin ad\u0131 ".concat(person.name, ", soyad\u0131 ise ").concat(person.surname, " d\u0131r."));

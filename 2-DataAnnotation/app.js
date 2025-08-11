@@ -11,3 +11,6 @@ var person = {
 function display(id, name) {
     console.log("ID: ".concat(id, ", Name: ").concat(name));
 }
+display(1, "Ozan");
+console.log(hobbies);
+console.log(person);

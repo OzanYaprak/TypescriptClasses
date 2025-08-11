@@ -26,3 +26,20 @@ console.log(ids);
 let values_1: (string | number)[] = ["Apple", 2, "Orange", 3, 5, "Banana"]
 let values_2: Array<string | number> = ["Apple", 2, "Orange", 3, 5, "Banana"]
 console.log(values_1);
+
+
+
+console.log("--------------------------------------");
+console.log("--------------------------------------");
+
+class Person {
+    NameAndSurname: (string | string)[] = [`Ozan`, `Yaprak`];
+
+    // constructor(NameAndSurname: (string | string)[]) {
+    //     this.NameAndSurname = NameAndSurname;
+    // }
+}
+
+let person_1 = new Person();
+
+console.log(person_1.NameAndSurname);

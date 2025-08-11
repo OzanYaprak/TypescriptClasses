@@ -18,3 +18,16 @@ console.log(ids);
 var values_1 = ["Apple", 2, "Orange", 3, 5, "Banana"];
 var values_2 = ["Apple", 2, "Orange", 3, 5, "Banana"];
 console.log(values_1);
+console.log("--------------------------------------");
+console.log("--------------------------------------");
+var Person = /** @class */ (function () {
+    function Person() {
+        this.NameAndSurname = ["Ozan", "Yaprak"];
+        // constructor(NameAndSurname: (string | string)[]) {
+        //     this.NameAndSurname = NameAndSurname;
+        // }
+    }
+    return Person;
+}());
+var person_1 = new Person();
+console.log(person_1.NameAndSurname);

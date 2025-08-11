@@ -29,3 +29,28 @@ let kisiTanim_after_es6: string = `${fullName} adındaki kişinin mesleği ${job
 // BOOLEAN
 let isPresent: boolean = true;
 console.log(isPresent);
+
+console.log("---------------------")
+console.log("---------------------")
+//! Başlangıç Değeri Atama
+class Person {
+    name: string = "Ozan";
+    surname: string = "Yaprak";
+}
+
+class Student {
+    StudentName: string;
+    isActive: boolean;
+    Number: number;
+
+    constructor(StudentName: string = "OzanYaprak", isActive: boolean = false, Number: number = 21) {
+        this.StudentName = StudentName;
+        this.isActive = isActive;
+        this.Number = Number;
+    }
+}
+let student = new Student();
+console.log(`${student.StudentName} isimli ve ${student.Number} numaralı `)
+
+let person = new Person();
+console.log(`Kişinin adı ${person.name}, soyadı ise ${person.surname} dır.`)
