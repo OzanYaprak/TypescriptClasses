@@ -17,6 +17,9 @@ var Department = /** @class */ (function () {
     function Department(name) {
         this.name = name;
     }
+    Department.prototype.printName = function () {
+        console.log("Department name:" + " " + this.name);
+    };
     return Department;
 }());
 var AccountingDepartment = /** @class */ (function (_super) {
@@ -24,5 +27,15 @@ var AccountingDepartment = /** @class */ (function (_super) {
     function AccountingDepartment() {
         return _super.call(this, "Accounting And Auditing") || this;
     }
+    AccountingDepartment.prototype.printMeeting = function () {
+        console.log("Method not completed.");
+    };
+    AccountingDepartment.prototype.generateReports = function () {
+        console.log("Generating accounting reports..");
+    };
     return AccountingDepartment;
 }(Department));
+var department = new AccountingDepartment();
+department.printName();
+department.printMeeting();
+department.generateReports();
