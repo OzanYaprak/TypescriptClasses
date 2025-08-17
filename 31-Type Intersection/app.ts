@@ -13,4 +13,14 @@ interface IContact {
     phone: string;
 }
 
-type Employee = IIdentity & IContact;
+type Employee = IIdentity & IContact & IBusinessPartner;
+
+let kisim: Employee = {
+    id: 1,
+    email: "oznyprk@gmail.com",
+    name: "Ozan",
+    phone: "11111",
+    credit: 123
+}
+
+console.log(kisim);
